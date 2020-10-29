@@ -13,3 +13,5 @@ Simple Tetris copy to practice Vanilla Javascript
 [ ] - When a block lands it can no longer move from that position
 
 [ ] - When a line of blocks is filled up, that entire line will disapear
+
+[ ] - Score board is updated whenever a line disapears
