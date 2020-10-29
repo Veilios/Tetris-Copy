@@ -80,6 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Make the tetromino go down every second
     timerId = setInterval(moveDown, 1000);
 
+    // Assign functions to keyCodes
+    const control = (e) => {
+        if(e.keyCode === 37){
+            moveLeft();
+        };
+    };
+    document.addEventListener('keyup', control);
+
     // Freeze function
     const freeze = () => {
         if(current.some(index => squares[currentPosition + index + width].classList.contains('taken'))) {
@@ -92,5 +100,25 @@ document.addEventListener('DOMContentLoaded', () => {
             draw();
         }
     };
+
+
+    // Move the tetromino left, unless is at the edge or there is a blockage
+    const moveLeft = () => {
+        undraw();
+        const isAtLeftEdge = current.some(index => (currentPosition + index) % width === 0);
+
+        if(!isAtLeftEdge) {currentPosition -=1};
+
+        if(current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
+            currentPosition += 1;
+        };
+
+        draw();
+    };
+
+
+
+
+
 
 });
