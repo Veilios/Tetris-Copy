@@ -74,10 +74,23 @@ document.addEventListener('DOMContentLoaded', () => {
        undraw();
        currentPosition += width;
        draw();
+       freeze();
    }; 
 
     // Make the tetromino go down every second
     timerId = setInterval(moveDown, 1000);
 
+    // Freeze function
+    const freeze = () => {
+        if(current.some(index => squares[currentPosition + index + width].classList.contains('taken'))) {
+            current.forEach(index => squares[currentPosition + index].classList.add('taken'));
+
+            // Start a new tetromino falling
+            random = Math.floor(Math.random() * theTetrominoes.length);
+            current = theTetrominoes[random][currentRotation];
+            currentPosition = 4;
+            draw();
+        }
+    };
 
 });
