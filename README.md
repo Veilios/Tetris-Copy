@@ -16,6 +16,7 @@ Simple Tetris copy to practice Vanilla Javascript
 
 [Done] - Score board is updated whenever a line disapears
 
+
 # Styling Objectives
 
 [ ] - Have the main game grid actually gridded
@@ -25,3 +26,12 @@ Simple Tetris copy to practice Vanilla Javascript
 [ ] - Give It a proper start menu
 
 [ ] - Display Final Score somewhere
+
+
+# Features
+
+[ ] - have a top 3 scoreboard displayed somewhere
+
+[ ] - somewhere to input your name 
+
+
