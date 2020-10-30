@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             draw();
             displayShape();
             addScore();
+            gameOver();
         }
     };
 
@@ -209,9 +210,20 @@ document.addEventListener('DOMContentLoaded', () => {
                   const squaresRemoved = squares.splice(i, width);
                   squares = squaresRemoved.concat(squares);
                   squares.forEach(cell => grid.appendChild(cell));
-              }
-          }
+              };
+          };
       };
+
+
+      //// Game Over
+      const gameOver = () => {
+          if(current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
+              scoreDisplay.innerHTML = 'end'
+              clearInterval(timerId);
+          };
+      };
+
+
 
 
 
