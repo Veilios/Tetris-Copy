@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let nextRandom = 0;
     let timerId;
     let score = 0;
+    let finalScore = 0;
     const colors = [
         'orange',
         'red',
@@ -230,8 +231,10 @@ document.addEventListener('DOMContentLoaded', () => {
       //// Game Over
       const gameOver = () => {
           if(current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
-              scoreDisplay.innerHTML = 'end'
+              finalScore = score;
+              scoreDisplay.innerHTML = `Final Score ${finalScore}`;
               clearInterval(timerId);
+
           };
       };
 

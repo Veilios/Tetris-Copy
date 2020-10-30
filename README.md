@@ -25,7 +25,7 @@ Simple Tetris copy to practice Vanilla Javascript
 
 [ ] - Give It a proper start menu
 
-[ ] - Display Final Score somewhere
+[Done] - Display Final Score somewhere
 
 
 # Features
