@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (e.keyCode === 39) {
             moveRight()
         } else if (e.keyCode === 40) {
-            //moveDown()
+            moveDown()
         }
     };
     document.addEventListener('keyup', control);
@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         draw();
     };
+
 
 
     // Move the tetromino right, unless is at the edge or there is a blockage
