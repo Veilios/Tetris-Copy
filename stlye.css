@@ -24,8 +24,8 @@ h3 {
 }
 
 .grid {
-    width: 200px;
-    height: 400px;
+    width: 194px;
+    height: 387px;
     display: flex;
     flex-wrap: wrap;
     background-color: khaki;
@@ -34,8 +34,9 @@ h3 {
 }
 
 .grid div {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+    border: solid black 1px;
 }
 
 .tetromino {
