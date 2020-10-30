@@ -15,3 +15,13 @@ Simple Tetris copy to practice Vanilla Javascript
 [Done] - When a line of blocks is filled up, that entire line will disapear
 
 [Done] - Score board is updated whenever a line disapears
+
+# Styling Objectives
+
+[ ] - Have the main game grid actually gridded
+
+[ ] - Changed the main grid color (maybe something visual)
+
+[ ] - Give It a proper start menu
+
+[ ] - Display Final Score somewhere
