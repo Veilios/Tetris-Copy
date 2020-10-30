@@ -34,6 +34,8 @@ Simple Tetris copy to practice Vanilla Javascript
 
 [ ] - somewhere to input your name 
 
+[ ] - After Game ends have a new button to start a new game
+
 
 # Known Bugs
 
