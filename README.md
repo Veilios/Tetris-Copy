@@ -35,3 +35,11 @@ Simple Tetris copy to practice Vanilla Javascript
 [ ] - somewhere to input your name 
 
 
+# Known Bugs
+
+[ ] - Sometimes the next tetromino will randomly appear twice. One that moves, another that stays still around the center
+        (The second tetromino will disappear if the first one hovers over it)
+
+[ ] - When the first score is made, the next tetrominos will start spawning at the second line, of grid, instead of the first
+
+[ ] - Pressing the Start/Pause Button mid game will change the next tetromino displayed
