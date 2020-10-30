@@ -21,7 +21,7 @@ Simple Tetris copy to practice Vanilla Javascript
 
 [ ] - Have the main game grid actually gridded
 
-[ ] - Changed the main grid color (maybe something visual)
+[Half] - Changed the main grid color (maybe something visual)
 
 [ ] - Give It a proper start menu
 

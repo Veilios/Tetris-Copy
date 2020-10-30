@@ -1,5 +1,26 @@
+body {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FjnZrNa9qH4A%2Fmaxresdefault.jpg&f=1&nofb=1');
+}
+
 .container {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+h3 {
+    color: whitesmoke;
+}
+
+.score-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .grid {
@@ -7,7 +28,9 @@
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
+    background-color: khaki;
+    border: solid black 3px;
+    margin-left: 150px;
 }
 
 .grid div {
@@ -24,8 +47,10 @@
     height: 80px;
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
-    margin-left: 50px;
+    background-color: khaki;
+    border: solid black 3px;
+    align-self: flex-start;
+    margin-right: 150px;
 }
 
 .mini-grid div {
